@@ -1,0 +1,24 @@
+#back{
+ -fx-background-color: rgb(11, 101, 133);
+
+}
+
+#buttonReceiptFile,#buttonback,#buttonExit{
+    -fx-background-color: rgb(59, 17, 98);
+	-fx-border-style: solid inside; 
+			-fx-border-width: 2; 
+			-fx-border-insets: 5; 
+			-fx-border-radius: 5;
+			-fx-border-color: rgb(46, 217, 7);
+            -fx-font-style: normal;
+							 -fx-font-weight: bold;
+							 -fx-color: rgb(13, 238, 51);
+}
+
+
+
+#bill{			 -fx-font-size: 10px;
+							 -fx-font-style: normal;
+							 -fx-font-weight: bold;
+							 -fx-background-color: black;
+							 }

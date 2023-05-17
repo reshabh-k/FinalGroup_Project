@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="782.0" style="-fx-background-color: linear-gradient(to top, #ff7f50, #6a5acd);" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectController">
+   <children>
+      <Label layoutX="222.0" layoutY="21.0" text="FITNESS BUFFS">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.06245614215731621" green="0.06245614215731621" red="0.9368420839309692" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane fx:id="third" layoutX="537.0" layoutY="296.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="heading" layoutX="14.0" layoutY="5.0" text="Pre/Intra Workout" textFill="#122be1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <ComboBox fx:id="cbPre" layoutX="14.0" layoutY="41.0" onAction="#selctPre" prefWidth="150.0" />
+            <Label fx:id="lbID1" layoutX="18.0" layoutY="92.0" text="ID:" />
+            <Label fx:id="lbName1" layoutX="18.0" layoutY="134.0" text="Name:" />
+            <Label fx:id="lbPrice1" layoutX="18.0" layoutY="169.0" text="Price:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="second" layoutX="286.0" layoutY="87.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="heading" layoutX="18.0" layoutY="13.0" text="Health Products" textFill="#122be1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <ComboBox fx:id="cbhealth" layoutX="14.0" layoutY="46.0" onAction="#selctHealth" prefWidth="150.0" />
+            <Label fx:id="lbID2" layoutX="21.0" layoutY="92.0" text="ID:" />
+            <Label fx:id="lbName2" layoutX="21.0" layoutY="134.0" text="Name:" />
+            <Label fx:id="lbPrice2" layoutX="21.0" layoutY="169.0" text="Price:" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="image1" fitHeight="166.0" fitWidth="219.0" layoutX="302.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workout-energy-booster-supplement-icon-pill-symbol-medicine-bodybuilder-illustration-simple-monoline-graphic-workout-140119295.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnTotal" layoutX="8.0" layoutY="526.0" mnemonicParsing="false" onAction="#calculateTotal" prefHeight="26.0" prefWidth="766.0" text="Calculate Total" />
+      <Button fx:id="btnReciept" layoutX="8.0" layoutY="561.0" mnemonicParsing="false" onAction="#printReciept" prefHeight="26.0" prefWidth="766.0" text="Reciept" />
+      <Label layoutX="234.0" layoutY="493.0" text="Total:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="lblTotal" layoutX="312.0" layoutY="485.0" prefHeight="43.0" prefWidth="240.0">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+      <AnchorPane fx:id="first" layoutX="50.0" layoutY="296.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="heading" layoutX="31.0" layoutY="8.0" text="Proteins" textFill="#122be1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbProtein" layoutX="14.0" layoutY="38.0" onAction="#selctProtein" prefWidth="150.0" />
+            <Label fx:id="lbID" layoutX="14.0" layoutY="83.0" text="ID:" />
+            <Label fx:id="lbName" layoutX="14.0" layoutY="127.0" text="Name:" />
+            <Label fx:id="lbPrice" layoutX="14.0" layoutY="169.0" text="Price:" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="233.0" layoutX="25.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Proteins.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="176.0" fitWidth="166.0" layoutX="537.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pre%20workout.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitb" layoutX="655.0" layoutY="18.0" mnemonicParsing="false" onAction="#exitwindow" prefHeight="55.0" prefWidth="96.0" text="Exit" />
+   </children>
+</AnchorPane>
